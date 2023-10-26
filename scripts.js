@@ -150,7 +150,7 @@ const menuView = () => {
 
 	view += `<ul class="listabotones">
             <li class="proximos" onmouseover="ocultar([3,5,7])">
-              <p class="proximos">próximos eventos </p>
+              <p class="proximos">inicio </p>
             </li>
 
             <li class="servicios" onmouseover="ocultar([3,5,7])">
@@ -161,7 +161,7 @@ const menuView = () => {
             <!--<li onmouseover="ver(3), ver(5), ver(7)" >-->
             <li onmouseover="ver([3,5,7])" >
 
-                <p onmouseout="ocultar([3,5,7])" onclick="clickMenu([3, 5, 7])">Clasificaciones</p>
+                <p onmouseout="ocultar([3,5,7])" onclick="clickMenu([3, 5, 7])">Blog</p>
                 <div  id="subseccion3"  onmouseover="ver([4]), ocultar(6)" onmouseout="ocultar([3,4,5,6,7])">
                   <button class="botonmenu" onclick="clickMenu([4])" >por año</button>
                 </div>
@@ -212,12 +212,12 @@ const contactoView = () => {
     <h1 class="h1contacto">Formulario de contacto</h1>
 
   
-    <p>Si quiere ponerse en contacto con nosotros hágalo a través, cualquiera de estos medios:
+    <p>Si quiere ponerse en contacto con nosotros hágalo a través de cualquiera de estos medios:
     teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
 
-    <h3>Rubén: 666666666</h3>
-    <h3>Samuel: 666666666</h3>
-    <h3>email: rssports@666666666</h3>
+    <h3>Adrián: 666666666</h3>
+    <h3>Raúl: 666666666</h3>
+    <h3>email: arvelgps@666666666</h3>
 
   </div>`;
 
