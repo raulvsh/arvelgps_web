@@ -1,0 +1,117 @@
+/*PÁGINA DETALLE*/
+.detalleevento {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.tituloDetalle {
+	background: var(--primary);
+	color: white;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: bold;
+
+	/*max-height: 4rem;*/
+	margin: 1rem 0;
+	padding: 1rem;
+	/*margin: 15px 0;
+	padding: 15px;*/
+	border-radius: 5px;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedorDetalle {
+	box-shadow: 2px 2px 7px grey;
+	border-radius: 5px;
+	background-color: white;
+	display: grid;
+	column-gap: 0;
+	grid-template-areas:
+		"img contentTitle contentDescription contentDescription contentDescription contentDescription"
+		"img contentTitle contentDescription contentDescription contentDescription contentDescription"
+		"img contentTitle contentDescription contentDescription contentDescription contentDescription"
+		"img contentTitle contentDescription contentDescription contentDescription contentDescription"
+		"actionsEvento actionsEvento actionsEvento actionsEvento actionsEvento actionsEvento";
+	transition: ease-in 0.2s all;
+}
+
+#miniaturaShow {
+	grid-area: img;
+	width: 20rem;
+	height: auto;
+	min-height: 200px;
+	padding: 1rem 0 0 1rem;
+	margin: 0;
+}
+
+div .contenedorDetalle .contentTitle {
+	padding: 3rem 0px 3rem 0;
+	grid-area: contentTitle;
+}
+
+div.elementoTitulo {
+	padding: 1rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+div.contenedorDetalle div.contentDescription {
+	padding: 3rem 0px 3rem 0;
+	grid-area: contentDescription;
+}
+
+div.elementoDescripcion {
+	padding: 1rem 0px;
+	font-size: 1.5rem;
+}
+
+.botondetallecarrera {
+	min-width: 300px;
+	min-height: 75px;
+	font-size: x-large;
+}
+
+div.actionsEvento {
+	grid-area: actionsEvento;
+	padding: 10px;
+}
+
+/*Específico pantallas grandes (navegador escritorio)*/
+@media only screen and (min-width: 990px) {
+	.botondetallecarrera {
+		height: 35px;
+		font-size: medium;
+		min-height: 35px;
+	}
+
+	div .contenedorDetalle .contentTitle {
+		padding: 2rem 0 2rem 0;
+	}
+
+	div.elementoTitulo {
+		padding: 1rem;
+		font-weight: bold;
+		font-size: large;
+	}
+
+	div.contenedorDetalle div.contentDescription {
+		padding: 2rem 0 2rem 0;
+	}
+
+	div.elementoDescripcion {
+		padding: 1rem;
+		font-size: large;
+	}
+
+	#miniaturaShow {
+		width: 15rem;
+	}
+
+	.tituloDetalle {
+		font-size: 1.5rem;
+	}
+}

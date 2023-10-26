@@ -1,0 +1,54 @@
+.MenuItem /* unifiedNavBar */
+{
+	cursor: pointer;
+}
+
+.MenuItemContainer
+{
+	background-color: transparent;
+	position: relative;
+}
+
+.MenuItemLabel{
+	position: relative;
+	overflow: hidden;
+	vertical-align: top;
+	display: block	
+}
+
+.MenuItemLink{	
+	background-color: #403D3D;
+	position: relative;
+}
+
+.MenuItemLink:hover{
+	background-color: #09598E;	
+}
+
+.MuseMenuActive
+{
+	background-color: #09598E;
+}
+
+#menuu382/*,#u429*/
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+.cabecera,#previo-menu-c
+{
+	background-color: transparent;
+	position: relative;
+}
+
+/*#u441
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #7F7F7F;
+	position: relative;
+}*/
+

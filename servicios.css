@@ -1,0 +1,62 @@
+/*DETALLE SERVICIOS*/
+.detalleServicios {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.contenedorDetalleServicios {
+	box-shadow: 2px 2px 7px grey;
+	border-radius: 5px;
+	background-color: white;
+	display: grid;
+	grid-template-areas:
+		"img img img"
+		"img img img"
+		"img img img"
+		"img img img"
+		"contentDescription contentDescription contentDescription"
+		"contentDescription contentDescription contentDescription"
+		"contentDescription contentDescription contentDescription"
+		"contentDescription contentDescription contentDescription";
+	transition: ease-in 0.2s all;
+}
+
+#miniaturaShowServicios {
+	grid-area: img;
+	width: 95%;
+	height: auto;
+	min-height: 200px;
+	padding: 2rem;
+}
+
+.descServicios {
+	grid-area: contentDescription;
+	font-size: larger;
+	text-align: justify;
+	padding: 40px 20px;
+}
+
+/*Específico pantallas grandes (navegador escritorio)*/
+@media only screen and (min-width: 990px) {
+	.contenedorDetalleServicios {
+		box-shadow: 2px 2px 7px grey;
+		border-radius: 5px;
+		background-color: white;
+		display: grid;
+		grid-template-areas:
+			"img img contentDescription contentDescription contentDescription"
+			"img img contentDescription contentDescription contentDescription"
+			"img img contentDescription contentDescription contentDescription"
+			"img img contentDescription contentDescription contentDescription";
+		transition: ease-in 0.2s all;
+	}
+
+	#miniaturaShowServicios {
+		grid-area: "img";
+		width: 25rem;
+		height: auto;
+		min-height: 200px;
+		padding: 1rem 0 1rem 1rem;
+	}
+}

@@ -1,0 +1,94 @@
+/*LISTA DE EVENTOS, GRID PRINCIPAL*/
+div.gridGeneral {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(33%, 20rem), 1fr));
+	/*grid-template-columns: repeat(3, 1fr);*/
+	width: 1fr;
+}
+
+div.carrera {
+	display: inline-block;
+	border-radius: 5px;
+	width: 1/3fr;
+	height: 1fr;
+	margin: 5px;
+	padding: 10px;
+	background-color: white;
+	box-shadow: 2px 2px 7px lightgrey;
+	cursor: pointer;
+	transition: ease-in 0.2s all;
+}
+
+div.carrera:hover {
+	box-shadow: 2px 2px 7px grey;
+	transition: ease-in 0.2s all;
+}
+
+div.carrera:hover div.title {
+	transition: ease-in 0.2s all;
+	color: var(--secondary);
+}
+
+div.carrera div.carrera-img img {
+	width: 100%;
+	border-radius: 5px;
+	height: 24rem;
+}
+
+div.carrera div.title {
+	color: black;
+	font-weight: bold;
+	font-size: 2rem;
+	cursor: pointer;
+	height: 11rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+div.carrera div.subtitle {
+	text-align: center;
+	cursor: pointer;
+	font-size: 2rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Específico pantallas grandes (navegador escritorio)*/
+@media only screen and (min-width: 990px) {
+	div.gridGeneral {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 1rem;
+	}
+
+	div.carrera {
+		width: 200px;
+	}
+
+	div.carrera div.carrera-img {
+		width: 200px;
+		height: auto;
+		min-height: 200px;
+	}
+
+	div.carrera div.carrera-img img {
+		height: 16em;
+	}
+
+	div.carrera div.title {
+		font-size: larger;
+		height: 70px;
+		padding: 10px 0px;
+	}
+
+	div.carrera div.subtitle {
+		text-align: center;
+		cursor: pointer;
+		font-size: 1rem;
+		height: 2rem;
+	}
+}
