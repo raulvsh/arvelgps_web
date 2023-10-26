@@ -1,13 +1,13 @@
 carreras = [
 
 {
-	titulo: "GREEN SERIES BERRIZ 2022",
-	fecha: "03/04/2022",
+	titulo: "Coruña del Conde",
+	fecha: "03/04/2023",
 	categoria: "BTT",
 	hora: "09:30",
 	distancia: "",
 	organizador: "",
-	miniatura: "img/2022/cartelGreenSeries2022.jpg",
+	miniatura: "img/2023/1.webp",
 	botones:
 		[
 			{
@@ -35,13 +35,13 @@ carreras = [
 },
 
 {
-	titulo: "I Trail Run Haciendo Sed Burgos 2022",
-	fecha: "03/04/2022",
+	titulo: "Huerta de Rey",
+	fecha: "03/04/2023",
 	categoria: "Carreras a pie",
 	hora: "",
 	distancia: "",
 	organizador: "",
-	miniatura: "img/2022/61-cartel-trail-run-haciendo-sed-burgos-2022.jpg",
+	miniatura: "img/2023/2.jpg",
 	botones:
 		[
 			{
@@ -60,13 +60,13 @@ carreras = [
 },
 
 {
-	titulo: "3ª Carrera Popular \"Running por África\"",
-	fecha: "03/04/2022",
+	titulo: "Covarrubias",
+	fecha: "03/04/2023",
 	categoria: "Carreras a pie",
 	hora: "10:00",
 	distancia: "17km / 6km",
 	organizador: "Alumnos CFGM Administrativo C. Paula Montal",
-	miniatura: "img/2022/cartelRunningPorAfrica2022.jpg",
+	miniatura: "img/2023/3.jpg",
 	botones:
 		[
 			{

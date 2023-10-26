@@ -32,7 +32,8 @@
 
 #navegador li:hover,
 #navegador li:active {
-	color: var(--secondary);
+	color:white;
+	
 	text-decoration: none;
 	background-color: var(--primary);
 	box-shadow: 2px 2px 7px grey;

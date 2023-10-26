@@ -1,3 +1,5 @@
+
+
 const categorias = ["Carreras a pie", "Ciclismo", "BTT", "Mushing"];
 
 let carreras_local;
@@ -145,17 +147,21 @@ const inscripcionesView = (enlace_inscripciones) => {
 	return view;
 };
 
+
+
 const menuView = () => {
 	view = "";
 
 	view += `<ul class="listabotones">
-            <li class="proximos" onmouseover="ocultar([3,5,7])">
-              <p class="proximos">inicio </p>
+            <li class="home" onmouseover="ocultar([3,5,7])">
+              <p class="home">inicio </p>
             </li>
 
             <li class="servicios" onmouseover="ocultar([3,5,7])">
             <p class="servicios">servicios</p>
             </li>
+
+          
 
             <!--<li  onmouseover="ver(3), ver(5), ver(7)" onclick="clickMenu(3)">-->
             <!--<li onmouseover="ver(3), ver(5), ver(7)" >-->
@@ -167,6 +173,7 @@ const menuView = () => {
                 </div>
                 <div id="subseccion4" onmouseover="ver([3,4]), ocultar(6)" onmouseout="ocultar([3,4,5,6,7])" >
                   <ul class="listasubapartados" onclick="ocultar([3,4,5,6,7]), reset()">
+                  <button class="searchDate botonmenu" data-my-id="${2023}" >2023</button>
                   <button class="searchDate botonmenu" data-my-id="${2022}" >2022</button>
                   <button class="searchDate botonmenu" data-my-id="${2021}" >2021</button>
                   <button class="searchDate botonmenu" data-my-id="${2020}" >2020</button>
@@ -182,8 +189,8 @@ const menuView = () => {
                 </div>
                 <div id="subseccion6" onmouseover="ver([5,6])" onmouseout="ocultar([3,4,5,6,7])" >
                   <ul class="listasubapartados" onclick="ocultar([3,4,5,6,7]), reset()">
-                    <button class="searchCat botonmenu" data-my-id="${0}">Carreras a pie</button>
-                    <button class="searchCat botonmenu" data-my-id="${1}">ciclismo</button>
+                    <button class="searchCat botonmenu" data-my-id="${0}">Caza</button>
+                    <button class="searchCat botonmenu" data-my-id="${1}">Mascotas</button>
                     <button class="searchCat botonmenu" data-my-id="${2}">BTT</button>
                     <button class="searchCat botonmenu" data-my-id="${3}">mushing</button>
                   </ul>
@@ -211,6 +218,9 @@ const contactoView = () => {
     
     <h1 class="h1contacto">Formulario de contacto</h1>
 
+    <img class="miniaturaContacto" src ="/img/contacto/adrian.jfif">
+    <img class="miniaturaContacto" src ="/img/contacto/raul.jfif">
+
   
     <p>Si quiere ponerse en contacto con nosotros hágalo a través de cualquiera de estos medios:
     teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
@@ -224,10 +234,46 @@ const contactoView = () => {
 	return view;
 };
 
+const homeView = () => {
+  view="";
+
+  view+=`<div class="indexblock" id="homecontent">
+  
+  <p>En el vasto y emocionante mundo de la caza, los lazos entre un cazador y su fiel compañero de cuatro patas son inquebrantables. La lealtad de un perro en el campo es inigualable, y juntos, cazador y canino, forjan una relación que va más allá de palabras. Pero, en el corazón de esta pasión, se esconde un temor que persigue a todo cazador: la pérdida de su inseparable amigo. La idea de perder a un perro en medio de una jornada de caza es un dolor que solo aquellos que lo han vivido pueden comprender.</p>
+
+  <p>En ARVEL, entendemos el profundo vínculo que une a un cazador con su perro. Compartimos la pasión por la caza y la admiración por estos leales compañeros, y es por eso que hemos dedicado nuestros esfuerzos a brindar una solución que alivia el corazón de todo cazador: nuestros collares de localización GPS para perros.
+  
+  <p>Nuestra misión es asegurar que ningún cazador tenga que experimentar el angustioso sentimiento de perder a su fiel amigo en medio de una cacería. Ofrecemos una gama de collares de localización de vanguardia que utilizan tecnología GPS de última generación para rastrear la ubicación de su perro en tiempo real. Estos dispositivos, diseñados específicamente para el ambiente exigente de la caza, son robustos, resistentes al agua y confiables en las condiciones más extremas.
+  
+  <p>Más que un producto, nuestros collares de localización GPS representan la tranquilidad y seguridad de saber que su perro está siempre a su lado, sin importar lo lejos que lo lleve la caza. Cuando un perro se extravía, nuestro sistema de seguimiento le permite recuperarlo rápidamente, evitando que se convierta en una triste estadística de compañeros perdidos en el campo.
+  
+  <!--<p>En ARVEL, compartimos su pasión por la caza y su amor por los perros. Estamos comprometidos a ayudar a preservar la relación especial que comparte con su compañero canino y a evitar el dolor de una pérdida innecesaria. Únase a nosotros en la búsqueda de la seguridad y la tranquilidad, y déjenos ser su aliado en esta apasionante aventura cinegética.-->
+  
+  <p>Descubra nuestros collares de localización GPS y permita que su próximo viaje de caza sea no solo emocionante, sino también un reencuentro con su mejor amigo de cuatro patas. En ARVEL sabemos que en la caza, la amistad y la seguridad son prioridades.</p>
+
+  <p><img class="homeimg" src="img/index/1.jpg"></p>
+
+
+</div>`
+
+  /*fetch('home_view.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main').innerHTML = data;
+      });
+*/
+
+	return view;
+};
+
 // CONTROLADORES
-const indexContr = () => {
+/*const indexContr = () => {
 	carreras_local = carreras;
 	resetContr(carreras_local);
+};*/
+
+const homeContr = () => {
+	document.getElementById("main").innerHTML = homeView();
 };
 
 const proximosContr = () => {
@@ -348,7 +394,7 @@ const inscripcionesContr = () => {
 };*/
 
 // Inicialización
-document.addEventListener("DOMContentLoaded", proximosContr);
+document.addEventListener("DOMContentLoaded", homeContr);
 document.addEventListener("DOMContentLoaded", menuContr);
 
 // ROUTER de eventos
@@ -357,14 +403,17 @@ const myId = (ev) => Number(ev.target.dataset.myId);
 
 document.addEventListener("click", (ev) => {
 	if (matchEvent(ev, ".reset")) resetContr(carreras);
-	else if (matchEvent(ev, ".proximos")) proximosContr();
+	//else if (matchEvent(ev, ".proximos")) proximosContr();
 	else if (matchEvent(ev, ".servicios")) serviciosContr();
 	else if (matchEvent(ev, ".show")) showContr(myId(ev));
 	else if (matchEvent(ev, ".showServicios")) showServiciosContr(myId(ev));
 	else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
 	else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
 	else if (matchEvent(ev, ".contacto")) contactoContr();
-	else if (matchEvent(ev, ".inscripciones")) inscripcionesContr();
+	//else if (matchEvent(ev, ".inscripciones")) inscripcionesContr();
+  else if (matchEvent(ev, ".home")) homeContr();
+  //else if (matchEvent(ev, ".proximos")) homeContr();
+
 	//Controladores no usados en esta versión
 	//if (matchEvent(ev, ".index")) indexContr();
 	//else if (matchEvent(ev, ".create")) createContr();

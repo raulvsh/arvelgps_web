@@ -1,4 +1,4 @@
-.formulariocontacto {
+.indexblock {
 	display: block;
 	padding: 0 1rem;
 	box-shadow: 2px 2px 7px grey;
@@ -8,10 +8,11 @@
 	transition: ease-in 0.2s all;
 }
 
-.miniaturaContacto {
-	width: 20rem;
+.homeimg {
+	display: block;
+	/*max-height:90%; max-width:90%;*/
+	width: 60%;
 	height: auto;
-	min-height: 200px;
-	padding: 1rem 0 0 1rem;
-	margin: 0;
+	margin: auto;
+
 }
