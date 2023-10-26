@@ -23,7 +23,7 @@ servicios = [
 	{
 		titulo: "Aplicación GPS específica",
 		miniatura:
-			"/img/servicios/aplicacion.jpg",
+			"/img/servicios/aplicacion.png",
 		descripcion: "prueba de descripcion dorsales",
 	},
 	//FIN CARRERA
@@ -32,7 +32,7 @@ servicios = [
 	{
 		titulo: "Base de carga múltiple",
 		miniatura:
-			"/img/servicios/base.jpg",
+			"/img/servicios/base.png",
 		descripcion: "prueba de descripcion camisetas",
 	},
 	//FIN CARRERA
