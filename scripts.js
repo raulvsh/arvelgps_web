@@ -1,10 +1,8 @@
-
-
 const categorias = ["Carreras a pie", "Ciclismo", "BTT", "Mushing"];
 
 let carreras_local;
 let resultados_busqueda;
-let enlace_inscripciones;
+//let enlace_inscripciones;
 let isClicked = [false, false, false, false, false, false, false, false];
 
 // VISTAS
@@ -103,10 +101,10 @@ const showView = (carrera) => {
     </div>
     <div class="actionsEvento">`;
 
-	if (carrera.inscripciones != undefined) {
+	/*if (carrera.inscripciones != undefined) {
 		enlace_inscripciones = carrera.inscripciones;
 		view += `<button class="inscripciones botondetallecarrera">Inscripciones</button>`;
-	}
+	}*/
 	for (let j = 0; j < carrera.botones.length; j++) {
 		view += `<a href=${carrera.botones[j].archivo} target=_blank><button class=botondetallecarrera>${carrera.botones[j].titulo}</button></a> `;
 	}
@@ -139,13 +137,13 @@ const showServiciosView = (carrera) => {
 	return view;
 };
 
-const inscripcionesView = (enlace_inscripciones) => {
+/*const inscripcionesView = (enlace_inscripciones) => {
 	view = "";
 	view += `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
 	//view += `<iframe class="htmlinscripciones" src="${enlace_inscripciones}"frameborder="0"></iframe>`;
 
 	return view;
-};
+};*/
 
 
 
@@ -224,9 +222,9 @@ const contactoView = () => {
   
     <p>Si quiere ponerse en contacto con nosotros hágalo a través de cualquiera de estos medios:
     teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
-
+    <p>**Buscar cómo agregarlos evitando el spam**</p>
     <h3>Adrián: 666666666</h3>
-    <h3>Raúl: 666666666</h3>
+    <h3>Raúl: 699999999</h3>
     <h3>email: arvelgps@666666666</h3>
 
   </div>`;
@@ -276,11 +274,11 @@ const homeContr = () => {
 	document.getElementById("main").innerHTML = homeView();
 };
 
-const proximosContr = () => {
+/*const proximosContr = () => {
 	//Igualo la lista de resultados búsqueda al archivo de próximos eventos
 	resultados_busqueda = proximos;
 	document.getElementById("main").innerHTML = indexView(proximos, "proximos");
-};
+};*/
 
 const serviciosContr = () => {
 	resultados_busqueda = servicios;
@@ -343,12 +341,12 @@ const contactoContr = () => {
 };
 
 //CONTROLADORES SIN USAR
-const inscripcionesContr = () => {
+/*const inscripcionesContr = () => {
 	document.getElementById(
 		"main"
 		//).innerHTML = `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
 	).innerHTML = inscripcionesView(enlace_inscripciones);
-};
+};*/
 
 /*const createContr = () => {
   let mis_carreras = JSON.parse(localStorage.mis_carreras);
