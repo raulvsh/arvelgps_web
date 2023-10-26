@@ -8,15 +8,15 @@
 
 /*ATRIBUTOS GENERALES*/
 body {
-	--primary: #553a2b;
-	--secondary: brown;
+	--primary: #283837;
+	--secondary: green;
 	margin: 0px;
 	width: 100%;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0px;
-	background-color: #0b6623;
+	background-image: url("./img/assets/background.jfif");
 }
 
 button {
