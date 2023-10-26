@@ -216,8 +216,8 @@ const contactoView = () => {
     
     <h1 class="h1contacto">Formulario de contacto</h1>
 
-    <img class="miniaturaContacto" src ="/img/contacto/adrian.jfif">
-    <img class="miniaturaContacto" src ="/img/contacto/raul.jfif">
+    <img class="miniaturaContacto" src ="img/contacto/adrian.jfif">
+    <img class="miniaturaContacto" src ="img/contacto/raul.jfif">
 
   
     <p>Si quiere ponerse en contacto con nosotros hágalo a través de cualquiera de estos medios:
