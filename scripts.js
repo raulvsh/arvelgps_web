@@ -216,7 +216,7 @@ const contactoView = () => {
     
     <h1 class="h1contacto">Formulario de contacto</h1>
 
-    <img class="miniaturaContacto" src ="./img/contacto/adrian.jfif">
+    <img class="miniaturaContacto" src ="img/contacto/adrian.jfif">
     <img class="miniaturaContacto" src ="img/contacto/raul.jfif">
 
   
